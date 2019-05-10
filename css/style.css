@@ -73,7 +73,7 @@ i.fas.fa-search:hover {
      text-align: center;
 }
  .logo img{
-     width: 175px;
+     width: 130px;
 }
 /* The overlay effect with black background */
 
@@ -359,8 +359,9 @@ transition: width .4s ease-in;
      text-align: center;
 }
  .newsoptions li:hover{
-     color: #e96803;
-     cursor: pointer;
+    color: white;
+    cursor: pointer;
+    background-color: #e96803;
 }
  .nohover {
      display: inline-block;
@@ -370,6 +371,7 @@ transition: width .4s ease-in;
      color: black;
      border-radius: 13pt;
      padding: 1px 13px 1px 13px;
+     margin-bottom: 15px;
 }
  .morenews{
      display: inline-block;
@@ -417,15 +419,23 @@ transition: width .4s ease-in;
      float: left;
 }
 /* small news section*/
+.topnews {
+    float: left;
+    width: 50%;
+}
  .picofnews {
      float: left;
-     width: 50%;
+     width: 90%;
      margin-bottom: 22px;
      margin-right: 13px;
 }
+.textofnews {
+    float: right;
+    width: 50%;
+}
  .picofnewslast {
      float: left;
-     width: 50%;
+     width: 90%;
      margin-right: 13px;
 }
  .dateofnews{
@@ -493,10 +503,9 @@ transition: width .4s ease-in;
 }
  .eventimage {
      float: left;
-     width: 50%;
+     width: 49%;
      height: auto;
      position: relative;
-     margin-right: 7px;
 }
  .dateofevent {
      position: absolute;
@@ -504,25 +513,27 @@ transition: width .4s ease-in;
      left: 0px;
      background: #423f3d;
      padding: 7px;
-     font-size: 1em;
+     font-size: 3.5vw;
      font-weight: 500;
      width: 10%;
      height: auto;
      color: white;
 }
  .eventtext{
-     padding-top: 13px;
+     padding-top: 5px;
      padding-right: 7px;
+     float: right;
+     width: 45%;
 }
  .eventtext h3 {
-     padding-bottom: 10px;
-     font-size: 17px;
+     padding-bottom: 8px;
+     font-size: 12px;
      margin-bottom: 0px;
 }
  .eventtext p{
-     padding-bottom: 10px;
+     padding-bottom: 5px;
      padding-left: 2px;
-     font-size: 15px;
+     font-size: 11px;
 }
  .allevents{
      color: black;
@@ -561,7 +572,7 @@ transition: width .4s ease-in;
      padding-top: 7px;
      padding-left: 15px;
      padding-bottom: 7px;
-     padding-right: 42px;
+     padding-right: 5px;
 }
  .link1 span{
      color: #e96803;
@@ -583,7 +594,7 @@ transition: width .4s ease-in;
      padding-top: 7px;
      padding-left: 13px;
      padding-bottom: 7px;
-     padding-right: 16px;
+     padding-right: 10px;
      width: 50%;
      box-sizing: border-box;
      float: left;
@@ -599,7 +610,7 @@ transition: width .4s ease-in;
      padding-top: 7px;
      padding-left: 15px;
      padding-bottom: 7px;
-     padding-right: 42px;
+     padding-right: 10px;
      width: 50%;
      float: right;
      box-sizing: border-box;
@@ -708,7 +719,7 @@ transition: width .4s ease-in;
 }
 /* COMPUTER KI SCREEN TK K LIYE */
  @media only screen and (min-width: 768px) {
-     .mobheader,.pagelinks,.linksfooter,.lastlinks,.mainviewbg,.newsoptions, .mobnews, .eventsmob, .logobottom{
+     #myOverlay,.mobheader,.pagelinks,.linksfooter,.lastlinks,.mainviewbg,.newsoptions, .mobnews, .eventsmob, .logobottom, #mobNav {
          display: none;
     }
     /* Top nav style code starts here*/
@@ -726,7 +737,7 @@ transition: width .4s ease-in;
     }
      .namedelhi {
          font-size: 14px;
-         letter-spacing: 0.4em;
+         letter-spacing: 0.2em;
          float: left;
          margin-top: 5px;
          margin-left: 100px;
@@ -1393,6 +1404,7 @@ transition: width .4s ease-in;
      .eventtext{
          padding: 0px;
          color: white;
+         width: auto;
     }
      .eventtext h3 {
          margin-top: 170px;
@@ -1457,108 +1469,78 @@ transition: width .4s ease-in;
          color: #e96803;
          cursor: pointer;
     }
-    .smallwrapper :hover {
-        background-color: #0d2341;
-        color: #dedddd;
-        cursor: pointer;
-    }
      .pagelinkspc{
          margin-bottom: 20px;
          clear: both;
-         display: inline-block;
          float: right;
-    }
-     .link1{
-         box-sizing: border-box;
-         width: 350px;
-         height: 40px;
-         border: 1pt solid #0d2341;
-         border-radius: 10px;
-         padding-top: 4px;
-         padding-left: 20px;
-         padding-bottom: 7px;
-         padding-right: 20px;
-         margin-bottom: 15px;
-         float: right;
-    }
-     .link1 span{
-         color: #e96803;
-         float: right;
-    }
-     .link1 :nth-child(1){
          font-size: 19px;
-         display: inline;
     }
-     .link1 :nth-child(2){
-         float: right;
-         margin-top: 0px;
-         margin-right: 13px;
-         color: #e96803;
+     .linkz{
+        box-sizing: border-box;
+        width: 350px;
+        float: right;
+        border: 1pt solid #0d2341;
+        border-radius: 10px;
+        margin-bottom: 10px;
     }
-     .smallwrapper{
-         width: 350px;
-         height: 95px;
-         box-sizing: border-box;
-         clear: both;
+    #freetrial {
+        box-sizing: border-box;
+        padding: 5px 20px;
+        }
+    .smallwrapper{
+        width: 350px;
+        height: 95px;
+        box-sizing: border-box;
+        clear: both;
     }
-     .link2, .link4 {
-         width: 160px;
-         height: 38px;
-         box-sizing: border-box;
-         border: 1pt solid #0d2341;
-         border-radius: 10px;
-         padding-top: 4px;
-         padding-left: 20px;
-         padding-bottom: 7px;
-         padding-right: 20px;
-         margin-bottom: 15px;
-         margin-right: 5px;
-         float: right;
+    .linka, .linkc {
+        width: 160px;
+        box-sizing: border-box;
+        float: right;
+        margin-bottom: 10px;
+        border: none;
+        border: 1pt solid #0d2341;
+        border-radius: 10px;
     }
-     .link2 span{
-         color: #e96803;
-         float: right;
+    .linkb, .linkd {
+        width: 160px;
+        box-sizing: border-box;
+        float: left;
+        border: none;
+        border: 1pt solid #0d2341;
+        border-radius: 10px;
+        margin-bottom: 10px;
     }
-     .link3, .link5 {
-         width: 160px;
-         height: 38px;
-         box-sizing: border-box;
-         border: 1pt solid #0d2341;
-         border-radius: 10px;
-         padding-top: 4px;
-         padding-left: 20px;
-         padding-bottom: 7px;
-         padding-right: 20px;
-         margin-bottom: 15px;
-         margin-right: 22px;
-         float: right;
-    }
-     .link3 span{
-         color: #e96803;
-         float: right;
-    }
-     .linktextleft {
-         font-size: 19px;
-         display: inline;
-    }
-     .link4 span {
-         color: #e96803;
-         float: right;
-    }
-     .link5 span {
-         float: right;
-         color: #e96803;
-    }
-  .link1:hover{
-         background-color: #0d2341;
+    .linkgroup1 {
+        padding: 5px 20px;
+        }
+    .linkgroup2 {
+        padding: 5px 20px;
+        }
+    .linka:hover, .linkc:hover, .linkd:hover, .linkz:hover, .linkb:hover {
+        color: white;
+        background-color: #0d2341;
          color: #dedddd;
          cursor: pointer;
+        }
+    .smallwrapper span {
+        color: #e96803;
     }
-    .link2:hover, .link3:hover, .link4:hover, .link5:hover {
-        background-color: #0d2341;
-        color: #dedddd;
-        cursor: pointer;
-    }
+    .linkgroup1span {
+        float: right;
+        }
+    .linkgroup1span1 {
+        float: right;
+        }
+    .linkgroup1span3 {
+        float: right;
+        }
+    .linkgroup1span4 {
+        float: right;
+        }
+    .linkgroup1span5 {
+        float: right;
+        } 
      .leftlpc{
          width: 100%;
          height: auto;
